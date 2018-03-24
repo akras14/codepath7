@@ -6,7 +6,7 @@ Time spent: **3** hours spent in total
 
 ## Pentesting Report
 
-1. Un-auth XSS in Comment [CVE-2015-3438](https://nvd.nist.gov/vuln/detail/CVE-2015-3438)
+## 1. Un-auth XSS in Comment [CVE-2015-3438](https://nvd.nist.gov/vuln/detail/CVE-2015-3438)
 
   - Summary:
     - Type: XSS
@@ -38,7 +38,7 @@ sometext
   - Reference: [https://cedricvb.be/post/wordpress-stored-xss-vulnerability-4-1-2/]()
 
 
-2. User Enumeration
+## 2. User Enumeration
   - Summary:
     - Type: User Enumeration
     - Tested in: 4.0.2
@@ -51,7 +51,7 @@ sometext
 
   For any WordPress site, navigate to wp-login.php page and try to enter a username with any password. Error message will indicate if user exists.
 
-3. XSS in a Large File Upload - [CVE-2017-9061](https://nvd.nist.gov/vuln/detail/CVE-2017-9061)
+## 3. XSS in a Large File Upload - [CVE-2017-9061](https://nvd.nist.gov/vuln/detail/CVE-2017-9061)
   - Summary:
     - Type: XSS
     - Tested in: 4.2
